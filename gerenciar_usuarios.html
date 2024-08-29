@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Usuários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciar Usuários</h1>
+        <nav>
+            <a href="admin.html">Administração</a>
+            <a href="gerenciar_usuarios.html#atualizar">Atualizar Usuário</a>
+            <a href="gerenciar_usuarios.html#verificar">Verificar Livros Alugados</a>
+        </nav>
+    </header>
+    <main>
+        <section id="atualizar">
+            <h2>Atualizar Usuário</h2>
+            <form id="atualizar-usuario-form">
+                <label for="nome-usuario-atualizar">Nome de Usuário:</label>
+                <input type="text" id="nome-usuario-atualizar" name="nome-usuario-atualizar" required>
+                <label for="novo-nome-usuario">Novo Nome:</label>
+                <input type="text" id="novo-nome-usuario" name="novo-nome-usuario" required>
+                <button type="submit">Atualizar Usuário</button>
+            </form>
+        </section>
+
+        <section id="verificar">
+            <h2>Verificar Livros Alugados</h2>
+            <form id="verificar-livros-form">
+                <label for="usuario-verificar">Nome do Usuário:</label>
+                <input type="text" id="usuario-verificar" name="usuario-verificar" required>
+                <button type="submit">Verificar</button>
+            </form>
+            <div id="livros-alugados">
+                <!-- Lista de livros alugados será gerada dinamicamente aqui -->
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Livros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciar Livros</h1>
+        <nav>
+            <a href="admin.html">Administração</a>
+            <a href="gerenciar_livros.html">Adicionar Livro</a>
+            <a href="gerenciar_livros.html#remover">Remover Livro</a>
+            <a href="gerenciar_livros.html#editar">Editar Livro</a>
+        </nav>
+    </header>
+    <main>
+        <section id="adicionar">
+            <h2>Adicionar Livro</h2>
+            <form id="adicionar-livro-form">
+                <label for="nome-livro">Nome do Livro:</label>
+                <input type="text" id="nome-livro" name="nome-livro" required>
+                <label for="editora">Editora:</label>
+                <input type="text" id="editora" name="editora" required>
+                <button type="submit">Adicionar Livro</button>
+            </form>
+        </section>
+
+        <section id="remover">
+            <h2>Remover Livro</h2>
+            <form id="remover-livro-form">
+                <label for="nome-livro-remover">Nome do Livro:</label>
+                <input type="text" id="nome-livro-remover" name="nome-livro-remover" required>
+                <button type="submit">Remover Livro</button>
+            </form>
+        </section>
+
+        <section id="editar">
+            <h2>Editar Livro</h2>
+            <form id="editar-livro-form">
+                <label for="nome-livro-editar">Nome do Livro:</label>
+                <input type="text" id="nome-livro-editar" name="nome-livro-editar" required>
+                <label for="novo-nome-livro">Novo Nome:</label>
+                <input type="text" id="novo-nome-livro" name="novo-nome-livro" required>
+                <label for="nova-editora">Nova Editora:</label>
+                <input type="text" id="nova-editora" name="nova-editora" required>
+                <button type="submit">Editar Livro</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
